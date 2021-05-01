@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "liuchengjin",
+    "password": "adc@19910204liu",
+    "database": "wmy_my_love",
+    "host": "rm-2zequywp3r5z8she2uo.mysql.rds.aliyuncs.com",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "liuchengjin",
+    "password":"adc@19910204liu",
+    "database": "wmy_my_love",
+    "host": "rm-2zequywp3r5z8she2125010.mysql.rds.aliyuncs.com",
+    "dialect": "mysql"
+  }
+}
