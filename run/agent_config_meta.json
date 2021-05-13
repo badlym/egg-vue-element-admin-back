@@ -1,364 +1,364 @@
 {
-  "keys": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-  "middleware": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
+  "keys": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+  "middleware": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
   "cors": {
-    "origin": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-    "allowMethods": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js"
+    "origin": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+    "allowMethods": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js"
   },
   "myJwt": {
-    "enable": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-    "secret": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-    "ignore": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js"
+    "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+    "secret": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+    "ignore": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js"
   },
   "security": {
     "csrf": {
-      "enable": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-      "type": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "ignoreJSON": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "useSession": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "cookieName": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "sessionName": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "headerName": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "bodyName": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "queryName": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "refererWhiteList": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+      "type": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+      "ignoreJSON": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+      "refererWhiteList": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js"
     },
-    "domainWhiteList": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-    "protocolWhiteList": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
+    "domainWhiteList": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
     "xframe": {
-      "enable": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js"
     },
     "hsts": {
-      "enable": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.local.js",
-      "maxAge": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "includeSubdomains": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js"
     },
     "dta": {
-      "enable": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js"
     },
     "methodnoallow": {
-      "enable": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js"
     },
     "noopen": {
-      "enable": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js"
     },
     "nosniff": {
-      "enable": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js"
     },
     "referrerPolicy": {
-      "enable": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js"
     },
     "xssProtection": {
-      "enable": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js"
     },
     "csp": {
-      "enable": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "policy": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "checkAddress": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "ipBlackList": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js"
     }
   },
   "mysql": {
     "client": {
-      "host": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-      "port": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-      "user": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-      "password": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-      "database": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js"
+      "host": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+      "port": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+      "user": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+      "password": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+      "database": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js"
     },
-    "app": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-    "agent": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
+    "app": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+    "agent": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
     "default": {
-      "database": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-mysql\\config\\config.default.js",
-      "connectionLimit": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-mysql\\config\\config.default.js"
+      "database": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-mysql\\config\\config.default.js",
+      "connectionLimit": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-mysql\\config\\config.default.js"
     }
   },
   "sequelize": {
-    "dialect": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-    "host": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-    "port": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-    "database": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-    "username": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-    "password": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
+    "dialect": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+    "host": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+    "port": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+    "database": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+    "username": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+    "password": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
     "define": {
-      "timestamps": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-      "paranoid": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-      "freezeTableName": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-      "underscored": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js"
+      "timestamps": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+      "paranoid": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+      "freezeTableName": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+      "underscored": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js"
     },
-    "timezone": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
+    "timezone": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
     "dialectOptions": {
-      "dateStrings": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-      "typeCast": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js"
+      "dateStrings": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+      "typeCast": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js"
     }
   },
   "oss": {
     "client": {
-      "accessKeyId": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-      "accessKeySecret": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-      "bucket": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-      "endpoint": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-      "timeout": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js"
+      "accessKeyId": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+      "accessKeySecret": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+      "bucket": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+      "endpoint": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+      "timeout": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js"
     },
     "default": {
-      "timeout": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-oss\\config\\config.default.js"
+      "timeout": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-oss\\config\\config.default.js"
     },
-    "useAgent": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-oss\\config\\config.default.js"
+    "useAgent": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-oss\\config\\config.default.js"
   },
   "logger": {
-    "level": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-    "outputJSON": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-    "encoding": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-    "consoleLevel": "D:\\王梦圆小仙女专属项目\\myLove-admin\\config\\config.default.js",
-    "dir": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "env": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "disableConsoleAfterReady": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "buffer": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "appLogName": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "coreLogName": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "agentLogName": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "errorLogName": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
+    "level": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+    "outputJSON": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+    "encoding": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+    "consoleLevel": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+    "dir": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "env": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
     "coreLogger": {
-      "consoleLevel": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.local.js"
+      "consoleLevel": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.local.js"
     },
-    "allowDebugAtProd": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+    "allowDebugAtProd": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
   },
   "session": {
-    "maxAge": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-session\\config\\config.default.js",
-    "key": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-session\\config\\config.default.js",
-    "httpOnly": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-session\\config\\config.default.js",
-    "encrypt": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-session\\config\\config.default.js",
-    "logValue": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-session\\config\\config.default.js"
+    "maxAge": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-session\\config\\config.default.js",
+    "logValue": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-session\\config\\config.default.js"
   },
   "helper": {
-    "shtml": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-security\\config\\config.default.js"
+    "shtml": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js"
   },
   "jsonp": {
-    "limit": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "callback": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "csrf": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-jsonp\\config\\config.default.js"
+    "limit": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-jsonp\\config\\config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-onerror\\config\\config.default.js",
-    "appErrorFilter": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-onerror\\config\\config.default.js",
-    "templatePath": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-onerror\\config\\config.default.js"
+    "errorPageUrl": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-onerror\\config\\config.default.js"
   },
   "i18n": {
-    "defaultLocale": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-i18n\\config\\config.default.js",
-    "dirs": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-i18n\\config\\config.default.js",
-    "queryField": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieField": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieDomain": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieMaxAge": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-i18n\\config\\config.default.js"
+    "defaultLocale": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieDomain": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-i18n\\config\\config.default.js"
   },
   "watcher": {
-    "type": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-watcher\\config\\config.local.js",
+    "type": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-watcher\\config\\config.local.js",
     "eventSources": {
-      "default": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-watcher\\config\\config.default.js",
-      "development": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-watcher\\config\\config.default.js"
+      "default": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-watcher\\config\\config.default.js"
     }
   },
   "customLogger": {
     "scheduleLogger": {
-      "consoleLevel": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-schedule\\config\\config.default.js",
-      "file": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-schedule\\config\\config.default.js"
+      "consoleLevel": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-schedule\\config\\config.default.js"
     }
   },
   "schedule": {
-    "directory": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-schedule\\config\\config.default.js"
+    "directory": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-schedule\\config\\config.default.js"
   },
   "multipart": {
-    "mode": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "autoFields": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "defaultCharset": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldNameSize": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldSize": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fields": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileSize": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "files": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileExtensions": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "whitelist": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "tmpdir": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "mode": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-multipart\\config\\config.default.js",
+    "autoFields": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileSize": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-multipart\\config\\config.default.js",
     "cleanSchedule": {
-      "cron": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-multipart\\config\\config.default.js"
+      "cron": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-multipart\\config\\config.default.js"
     }
   },
   "development": {
-    "watchDirs": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-development\\config\\config.default.js",
-    "ignoreDirs": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-development\\config\\config.default.js",
-    "fastReady": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-development\\config\\config.default.js",
-    "reloadOnDebug": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-development\\config\\config.default.js",
-    "overrideDefault": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-development\\config\\config.default.js",
-    "overrideIgnore": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-development\\config\\config.default.js"
+    "watchDirs": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideIgnore": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-development\\config\\config.default.js"
   },
   "logrotator": {
-    "filesRotateByHour": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "hourDelimiter": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "filesRotateBySize": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFileSize": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFiles": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "rotateDuration": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxDays": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-logrotator\\config\\config.default.js"
+    "filesRotateByHour": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-logrotator\\config\\config.default.js"
   },
   "static": {
-    "prefix": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-static\\config\\config.default.js",
-    "dir": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-static\\config\\config.default.js",
-    "dynamic": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-static\\config\\config.default.js",
-    "preload": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-static\\config\\config.default.js",
-    "buffer": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-static\\config\\config.default.js",
-    "maxFiles": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-static\\config\\config.default.js"
+    "prefix": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-static\\config\\config.default.js",
+    "dir": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-static\\config\\config.default.js"
   },
   "view": {
-    "root": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-view\\config\\config.default.js",
-    "cache": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-view\\config\\config.local.js",
-    "defaultExtension": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-view\\config\\config.default.js",
-    "defaultViewEngine": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-view\\config\\config.default.js",
-    "mapping": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-view\\config\\config.default.js"
+    "root": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-view\\config\\config.default.js",
+    "defaultViewEngine": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-view\\config\\config.default.js",
+    "mapping": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-view\\config\\config.default.js"
   },
   "jwt": {
-    "secret": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-jwt\\config\\config.default.js",
-    "enable": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-jwt\\config\\config.default.js"
+    "secret": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-jwt\\config\\config.default.js",
+    "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-jwt\\config\\config.default.js"
   },
-  "validate": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg-validate\\config\\config.default.js",
-  "env": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-  "name": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-  "cookies": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-  "proxy": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-  "maxIpsCount": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-  "maxProxyCount": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-  "protocolHeaders": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-  "ipHeaders": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-  "hostHeaders": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
+  "validate": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-validate\\config\\config.default.js",
+  "env": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+  "name": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+  "cookies": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+  "maxIpsCount": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+  "maxProxyCount": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
   "pkg": {
-    "name": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "version": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "description": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "private": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
+    "name": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "version": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "description": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "private": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
     "egg": {
-      "declarations": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+      "declarations": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
     },
     "dependencies": {
-      "bcryptjs": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-jwt": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-mysql": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-oss": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-scripts": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-sequelize": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-validate": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "mysql2": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+      "bcryptjs": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "egg": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "egg-jwt": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "egg-mysql": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "egg-oss": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "egg-scripts": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "egg-sequelize": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "egg-validate": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "mysql2": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
-      "autod": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "autod-egg": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-bin": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-ci": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-mock": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "eslint": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "eslint-config-egg": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "sequelize-cli": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+      "autod": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "autod-egg": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "egg-bin": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "egg-ci": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "egg-mock": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "eslint": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "eslint-config-egg": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "sequelize-cli": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
     },
     "engines": {
-      "node": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+      "node": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
     },
     "scripts": {
-      "start": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "stop": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "dev": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "debug": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "test": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "test-local": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "cov": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "lint": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "ci": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "autod": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+      "start": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "stop": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "dev": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "debug": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "test": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "test-local": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "cov": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "lint": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "ci": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "autod": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
     },
     "ci": {
-      "version": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+      "version": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
     },
     "repository": {
-      "type": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "url": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+      "type": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "url": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
     },
-    "author": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "license": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+    "author": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "license": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
   },
-  "baseDir": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-  "HOME": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-  "rundir": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
+  "baseDir": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
   "dump": {
-    "ignore": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+    "ignore": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
   },
   "confusedConfigurations": {
-    "bodyparser": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "notFound": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "sitefile": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "middlewares": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "httpClient": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+    "bodyparser": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
   },
   "notfound": {
-    "pageUrl": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+    "pageUrl": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+    "/favicon.ico": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
   },
   "bodyParser": {
-    "enable": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "formLimit": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "jsonLimit": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "textLimit": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "strict": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
+    "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "textLimit": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "strict": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
     "queryString": {
-      "arrayLimit": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "depth": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "parameterLimit": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+      "arrayLimit": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "depth": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
     },
-    "onerror": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+    "onerror": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
   },
   "httpclient": {
-    "enableDNSCache": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheLookupInterval": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheMaxLength": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
+    "enableDNSCache": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
     "request": {
-      "timeout": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+      "timeout": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
     }
   },
   "meta": {
-    "enable": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "logging": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+    "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "logging": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
   },
-  "coreMiddleware": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-  "workerStartTimeout": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-  "serverTimeout": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
+  "coreMiddleware": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+  "serverTimeout": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
   "cluster": {
     "listen": {
-      "path": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "port": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-      "hostname": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+      "path": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "port": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
     }
   },
   "clusterClient": {
-    "maxWaitTime": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js",
-    "responseTimeout": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+    "maxWaitTime": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
   },
-  "onClientError": "D:\\王梦圆小仙女专属项目\\myLove-admin\\node_modules\\egg\\config\\config.default.js"
+  "onClientError": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
 }

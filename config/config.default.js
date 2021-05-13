@@ -45,7 +45,7 @@ module.exports = appInfo => {
       // 密码
       password: 'adc@19910204liu',
       // 数据库名
-      database: 'wmy_my_love',
+      database: 'egg-vue-element-admin-back',
     },
     // 是否加载到 app 上，默认开启
     app: true,
@@ -70,7 +70,7 @@ module.exports = appInfo => {
     dialect: 'mysql',
     host: 'rm-2zequywp3r5z8she2uo.mysql.rds.aliyuncs.com',
     port: 3306,
-    database: 'wmy_my_love',
+    database: 'egg-vue-element-admin-back',
     username: 'liuchengjin',
     password: 'adc@19910204liu',
     define: { // model的全局配置

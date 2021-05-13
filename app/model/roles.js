@@ -11,7 +11,7 @@ module.exports = app => {
   });
   Roles.associate = function() {
 
-    app.model.Roles.hasOne(app.model.Users);
+    app.model.Roles.hasMany(app.model.Users);
 
 
   };

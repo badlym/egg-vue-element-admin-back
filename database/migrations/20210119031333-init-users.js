@@ -18,12 +18,12 @@ module.exports = {
       update_by: STRING,
       role_id: {
         type: INTEGER,
-        references: {
-          model: {
-            tableName: 'roles',
-          },
-          key: 'id',
-        },
+        // references: {
+        //   model: {
+        //     tableName: 'roles',
+        //   },
+        //   key: 'id',
+        // },
         allowNull: false,
       },
       name: STRING,
