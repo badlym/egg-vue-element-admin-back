@@ -7,21 +7,19 @@
  */
 module.exports = appInfo => {
   /**
-   * built-in config
-   * @type {Egg.EggAppConfig}
-   **/
+     * built-in config
+     * @type {Egg.EggAppConfig}
+     **/
   const config = exports = {};
-
-
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_19910204liu';
-
   // add your middleware config here
   // config.middleware = [ 'notfoundHandler' ];
   config.middleware = [ 'myJwt', 'errorHandler' ];
   config.cors = {
     origin: '*',
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
+    credentials: true,
   };
   config.myJwt = { // jwt配置项
     enable: true,
@@ -32,6 +30,8 @@ module.exports = appInfo => {
     csrf: {
       enable: false,
     },
+    // 白名单
+    domainWhiteList: [ '*' ],
   };
   config.mysql = {
     // 单数据库信息配置
@@ -57,15 +57,15 @@ module.exports = appInfo => {
   const userConfig = {
     // myAppName: 'egg',
   };
-  // 配置数据库连接
-  /*
-  *
-  *  host: 'localhost',
-      port: '3306',
-      user: 'root',
-      password: 'root',
-      database: 'egg_main',
-  * */
+    // 配置数据库连接
+    /*
+    *
+    *  host: 'localhost',
+        port: '3306',
+        user: 'root',
+        password: 'root',
+        database: 'egg_main',
+    * */
   config.sequelize = {
     dialect: 'mysql',
     host: 'rm-2zequywp3r5z8she2uo.mysql.rds.aliyuncs.com',
@@ -75,8 +75,8 @@ module.exports = appInfo => {
     password: 'adc@19910204liu',
     define: { // model的全局配置
       timestamps: true, // 添加create,update,delete时间戳
-      paranoid: true, // 添加软删除
-      freezeTableName: true, // 防止修改表名为复数
+      paranoid: false, // 添加软删除
+      freezeTableName: false, // 防止修改表名为复数
       underscored: true, // 防止驼峰式字段被默认转为下划线
     },
     timezone: '+8:00', // 由于orm用的UTC时间，这里必须加上东八区，否则取出来的时间相差8小时
@@ -93,7 +93,7 @@ module.exports = appInfo => {
   // normal oss bucket
   config.oss = {
     /* LTAI5tM56necoroJS1jMyfQY
-wHrQ22pDn3x8zdQ0OYnePfwW5HLsDG*/
+                wHrQ22pDn3x8zdQ0OYnePfwW5HLsDG*/
     client: {
       accessKeyId: 'LTAI5tM56necoroJS1jMyfQY',
       accessKeySecret: 'wHrQ22pDn3x8zdQ0OYnePfwW5HLsDG',
@@ -108,6 +108,32 @@ wHrQ22pDn3x8zdQ0OYnePfwW5HLsDG*/
     outputJSON: true,
     encoding: 'utf-8',
     consoleLevel: 'DEBUG',
+  };
+  config.validatePlus = {
+    resolveError(ctx, errors) {
+      if (errors.length) {
+        ctx.type = 'json';
+        ctx.status = 400;
+        ctx.body = {
+          code: 400,
+          error: errors,
+          message: '参数错误',
+        };
+      }
+    },
+  };
+  config.validatePlusNext = {
+    resolveError(ctx, errors) {
+      if (errors.length) {
+        ctx.type = 'json';
+        ctx.status = 400;
+        ctx.body = {
+          code: 400,
+          error: errors,
+          message: '参数错误',
+        };
+      }
+    },
   };
 
   return {

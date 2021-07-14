@@ -3,7 +3,8 @@
   "middleware": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
   "cors": {
     "origin": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
-    "allowMethods": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js"
+    "allowMethods": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
+    "credentials": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js"
   },
   "myJwt": {
     "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
@@ -23,7 +24,7 @@
       "queryName": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
       "refererWhiteList": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js"
     },
-    "domainWhiteList": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
+    "domainWhiteList": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js",
     "protocolWhiteList": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
     "defaultMiddleware": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-security\\config\\config.default.js",
     "xframe": {
@@ -129,6 +130,12 @@
     },
     "allowDebugAtProd": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
   },
+  "validatePlus": {
+    "resolveError": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js"
+  },
+  "validatePlusNext": {
+    "resolveError": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\config.default.js"
+  },
   "session": {
     "maxAge": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-session\\config\\config.default.js",
     "key": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-session\\config\\config.default.js",
@@ -226,6 +233,12 @@
     "enable": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-jwt\\config\\config.default.js"
   },
   "validate": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-validate\\config\\config.default.js",
+  "customLoader": {
+    "validate": {
+      "directory": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\_egg-validate-plus-next@1.1.1@egg-validate-plus-next\\config\\config.default.js",
+      "inject": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\_egg-validate-plus-next@1.1.1@egg-validate-plus-next\\config\\config.default.js"
+    }
+  },
   "env": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
   "name": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
   "cookies": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
@@ -246,13 +259,15 @@
     "dependencies": {
       "bcryptjs": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
       "egg": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "egg-cors": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
       "egg-jwt": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
       "egg-mysql": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
       "egg-oss": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
       "egg-scripts": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
       "egg-sequelize": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
       "egg-validate": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
-      "mysql2": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
+      "mysql2": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",
+      "validate-plus": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
       "autod": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\config.default.js",

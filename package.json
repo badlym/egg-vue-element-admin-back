@@ -1,7 +1,7 @@
 {
   "name": "wmy_my_love",
   "version": "1.0.0",
-  "description": "王梦圆小仙女后台管理系统",
+  "description": "学生选课系统",
   "private": true,
   "egg": {
     "declarations": true
@@ -9,13 +9,15 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "egg": "^2.15.1",
+    "egg-cors": "^2.2.3",
     "egg-jwt": "^3.1.7",
     "egg-mysql": "^3.0.0",
     "egg-oss": "^2.0.0",
     "egg-scripts": "^2.11.0",
     "egg-sequelize": "^6.0.0",
     "egg-validate": "^2.0.2",
-    "mysql2": "^2.2.5"
+    "mysql2": "^2.2.5",
+    "validate-plus": "^1.0.3"
   },
   "devDependencies": {
     "autod": "^3.0.1",

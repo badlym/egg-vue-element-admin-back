@@ -25,4 +25,17 @@ module.exports = {
   validate: {
     enable: true,
     package: 'egg-validate',
-  } };
+  },
+  cors: {
+    enable: true,
+    package: 'egg-cors',
+  },
+  validatePlus: {
+    enable: true,
+    package: 'egg-validate-plus',
+  },
+  validatePlusNext: {
+    enable: true,
+    package: 'egg-validate-plus-next',
+  },
+};

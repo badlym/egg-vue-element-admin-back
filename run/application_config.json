@@ -14,7 +14,9 @@
       "genid": "<Function v4>"
     },
     "security": {
-      "domainWhiteList": [],
+      "domainWhiteList": [
+        "*"
+      ],
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
       "csrf": {
@@ -110,6 +112,9 @@
         "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-jwt\\config\\locales",
         "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-oss\\config\\locales",
         "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-validate\\config\\locales",
+        "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-cors\\config\\locales",
+        "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\_egg-validate-plus@1.1.6@egg-validate-plus\\config\\locales",
+        "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\_egg-validate-plus-next@1.1.1@egg-validate-plus-next\\config\\locales",
         "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg\\config\\locales",
         "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\locales"
       ],
@@ -192,8 +197,8 @@
       "password": "<String len: 15>",
       "define": {
         "timestamps": true,
-        "paranoid": true,
-        "freezeTableName": true,
+        "paranoid": false,
+        "freezeTableName": false,
         "underscored": true
       },
       "timezone": "+8:00",
@@ -235,6 +240,23 @@
       }
     },
     "validate": {},
+    "cors": {
+      "origin": "*",
+      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH",
+      "credentials": true
+    },
+    "validatePlus": {
+      "resolveError": "<Function resolveError>"
+    },
+    "validatePlusNext": {
+      "resolveError": "<Function resolveError>"
+    },
+    "customLoader": {
+      "validate": {
+        "directory": "app/validate",
+        "inject": "app"
+      }
+    },
     "env": "local",
     "name": "wmy_my_love",
     "keys": "<String len: 23>",
@@ -248,7 +270,7 @@
     "pkg": {
       "name": "wmy_my_love",
       "version": "1.0.0",
-      "description": "王梦圆小仙女后台管理系统",
+      "description": "学生选课系统",
       "private": true,
       "egg": {
         "declarations": true
@@ -256,13 +278,15 @@
       "dependencies": {
         "bcryptjs": "^2.4.3",
         "egg": "^2.15.1",
+        "egg-cors": "^2.2.3",
         "egg-jwt": "^3.1.7",
         "egg-mysql": "^3.0.0",
         "egg-oss": "^2.0.0",
         "egg-scripts": "^2.11.0",
         "egg-sequelize": "^6.0.0",
         "egg-validate": "^2.0.2",
-        "mysql2": "^2.2.5"
+        "mysql2": "^2.2.5",
+        "validate-plus": "^1.0.3"
       },
       "devDependencies": {
         "autod": "^3.0.1",
@@ -380,6 +404,7 @@
       "logging": false
     },
     "coreMiddleware": [
+      "cors",
       "meta",
       "siteFile",
       "notfound",
@@ -410,10 +435,6 @@
       "myJwt",
       "errorHandler"
     ],
-    "cors": {
-      "origin": "*",
-      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH"
-    },
     "myJwt": {
       "enable": true,
       "secret": "<String len: 4>",
@@ -641,6 +662,39 @@
       "from": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\plugin.js",
       "path": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-validate",
       "version": "2.0.2"
+    },
+    "cors": {
+      "enable": true,
+      "package": "egg-cors",
+      "name": "cors",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\plugin.js",
+      "path": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\egg-cors",
+      "version": "2.2.3"
+    },
+    "validatePlus": {
+      "enable": true,
+      "package": "egg-validate-plus",
+      "name": "validatePlus",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\plugin.js",
+      "path": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\_egg-validate-plus@1.1.6@egg-validate-plus",
+      "version": "1.1.6"
+    },
+    "validatePlusNext": {
+      "enable": true,
+      "package": "egg-validate-plus-next",
+      "name": "validatePlusNext",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "D:\\egg-vue-element\\egg-vue-element-admin-back\\config\\plugin.js",
+      "path": "D:\\egg-vue-element\\egg-vue-element-admin-back\\node_modules\\_egg-validate-plus-next@1.1.1@egg-validate-plus-next",
+      "version": "1.1.1"
     }
   }
 }

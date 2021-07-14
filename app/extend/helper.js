@@ -1,6 +1,7 @@
 
 'use strict';
 const bcrypt = require('bcryptjs');
+const moment = require('moment');
 module.exports = {
 
   /**
@@ -27,4 +28,22 @@ module.exports = {
   },
   // token里边携带的用户数据
   tokenInfo: null,
+  formatTime(time) {
+    return moment(time).format('YYYY-MM-DD HH:mm:ss');
+  },
+  success({ ctx, res = null, msg = '请求成功' }) {
+    ctx.body = {
+      code: 0,
+      data: res,
+      msg,
+    };
+    // ctx.status = 200;
+  },
+  resError({ ctx, res = null, msg = '错误' }) {
+    ctx.body = {
+      code: -1,
+      data: res,
+      msg,
+    };
+  },
 };

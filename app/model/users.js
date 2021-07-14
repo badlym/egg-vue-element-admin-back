@@ -12,6 +12,7 @@ module.exports = app => {
     password: STRING,
     created_at: DATE,
     updated_at: DATE,
+    deleted_at: DATE,
     createBy: STRING,
     updateBy: STRING,
     roleId: {
@@ -27,13 +28,11 @@ module.exports = app => {
     avatar: STRING,
     phone: STRING,
   }, {
-    timestamps: false,
+    timestamps: true,
   });
   Users.associate = function() {
     // 1对多
     app.model.Users.belongsTo(app.model.Roles);
   };
   return Users;
-
-
 };

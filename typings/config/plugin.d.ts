@@ -19,6 +19,9 @@ import 'egg-mysql';
 import 'egg-jwt';
 import 'egg-oss';
 import 'egg-validate';
+import 'egg-cors';
+import 'egg-validate-plus';
+import 'egg-validate-plus-next';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -39,5 +42,8 @@ declare module 'egg' {
     jwt?: EggPluginItem;
     oss?: EggPluginItem;
     validate?: EggPluginItem;
+    cors?: EggPluginItem;
+    validatePlus?: EggPluginItem;
+    validatePlusNext?: EggPluginItem;
   }
 }

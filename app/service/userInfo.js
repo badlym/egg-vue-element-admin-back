@@ -12,22 +12,13 @@ class UserInfoService extends Service {
       where: {
         id: ctx.helper.tokenInfo.data.id,
       },
+      // raw: false,
       include: {
         model: ctx.model.Roles,
       },
     });
-    if (result) {
-      return {
-        code: 0,
-        msg: '查询成功',
-        data: result,
-      };
-    }
-    return {
-      code: -1,
-      data: {},
-      msg: '无数据',
-    };
+    return result;
+
   }
 
 }

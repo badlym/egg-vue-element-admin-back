@@ -17,7 +17,7 @@ class BaseController extends Controller {
 
   }
 
-  error({ code = -1, msg = '服务器错误', data = {} } = {}) {
+  resError({ code = -1, msg = '服务器错误', data = {} } = {}) {
     return {
       code,
       msg,
