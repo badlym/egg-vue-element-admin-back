@@ -109,19 +109,6 @@ module.exports = appInfo => {
     encoding: 'utf-8',
     consoleLevel: 'DEBUG',
   };
-  config.validatePlus = {
-    resolveError(ctx, errors) {
-      if (errors.length) {
-        ctx.type = 'json';
-        ctx.status = 400;
-        ctx.body = {
-          code: 400,
-          error: errors,
-          message: '参数错误',
-        };
-      }
-    },
-  };
   config.validatePlusNext = {
     resolveError(ctx, errors) {
       if (errors.length) {

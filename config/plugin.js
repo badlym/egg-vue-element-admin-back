@@ -30,10 +30,6 @@ module.exports = {
     enable: true,
     package: 'egg-cors',
   },
-  validatePlus: {
-    enable: true,
-    package: 'egg-validate-plus',
-  },
   validatePlusNext: {
     enable: true,
     package: 'egg-validate-plus-next',
