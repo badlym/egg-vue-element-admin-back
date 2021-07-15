@@ -20,7 +20,6 @@ import 'egg-jwt';
 import 'egg-oss';
 import 'egg-validate';
 import 'egg-cors';
-import 'egg-validate-plus';
 import 'egg-validate-plus-next';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
@@ -43,7 +42,6 @@ declare module 'egg' {
     oss?: EggPluginItem;
     validate?: EggPluginItem;
     cors?: EggPluginItem;
-    validatePlus?: EggPluginItem;
     validatePlusNext?: EggPluginItem;
   }
 }
