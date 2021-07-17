@@ -2,7 +2,7 @@
 'use strict';
 const Service = require('egg').Service;
 
-class UserService extends Service {
+class RoleService extends Service {
   async index() {
     const { ctx } = this;
     const { current, limit, username } = ctx.query;
@@ -19,6 +19,15 @@ class UserService extends Service {
         model: ctx.model.Roles,
       },
     });
+  }
+  async getRole() {
+
+    const { ctx } = this;
+    return await ctx.model.Roles.findAll(
+      {
+        attributes: [ 'id', 'name', 'description' ],
+      }
+    );
   }
   async create() {
     const { ctx } = this;
@@ -57,4 +66,4 @@ class UserService extends Service {
   }
 }
 
-module.exports = UserService;
+module.exports = RoleService;

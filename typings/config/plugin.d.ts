@@ -21,6 +21,7 @@ import 'egg-oss';
 import 'egg-validate';
 import 'egg-cors';
 import 'egg-validate-plus-next';
+import 'egg-swagger-doc';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -43,5 +44,6 @@ declare module 'egg' {
     validate?: EggPluginItem;
     cors?: EggPluginItem;
     validatePlusNext?: EggPluginItem;
+    swaggerdoc?: EggPluginItem;
   }
 }

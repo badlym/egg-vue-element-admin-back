@@ -12,4 +12,5 @@ module.exports = app => {
   router.post('/api/uploadFile', controller.upload.index);
   router.resources('user', '/api/user', controller.user);
   router.delete('/api/user', controller.user.removes);
+  router.get('/api/role', controller.role.getRole);
 };

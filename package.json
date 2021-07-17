@@ -15,6 +15,7 @@
     "egg-oss": "^2.0.0",
     "egg-scripts": "^2.11.0",
     "egg-sequelize": "^6.0.0",
+    "egg-swagger-doc": "^2.3.2",
     "egg-validate": "^2.0.2",
     "egg-validate-plus-next": "^1.1.1",
     "mysql2": "^2.2.5"
@@ -25,6 +26,7 @@
     "egg-bin": "^4.11.0",
     "egg-ci": "^1.11.0",
     "egg-mock": "^3.21.0",
+    "egg-sequelize-auto": "^0.1.1",
     "eslint": "^5.13.0",
     "eslint-config-egg": "^7.1.0",
     "sequelize-cli": "^6.2.0"
@@ -42,7 +44,8 @@
     "cov": "egg-bin cov",
     "lint": "eslint .",
     "ci": "npm run lint && npm run cov",
-    "autod": "autod"
+    "autod": "autod",
+    "dbload": "egg-sequelize-auto -o ./app/model/haha -h rm-2zequywp3r5z8she2uo.mysql.rds.aliyuncs.com -p 3306 -d egg-vue-element-admin-back -u liuchengjin -x adc@19910204liu "
   },
   "ci": {
     "version": "10"
