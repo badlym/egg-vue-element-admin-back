@@ -2,7 +2,7 @@
 
 module.exports = app => {
   const { STRING, INTEGER, DATE, UUID } = app.Sequelize;
-  const Users = app.model.define('users', {
+  const User = app.model.define('user', {
     id: { type: UUID, primaryKey: true, defaultValue: app.Sequelize.UUIDV4 },
     username: {
       type: STRING,
@@ -30,9 +30,9 @@ module.exports = app => {
   }, {
     timestamps: true,
   });
-  Users.associate = function() {
+  User.associate = function() {
     // 1对多
-    app.model.Users.belongsTo(app.model.Roles);
+    app.model.User.belongsTo(app.model.Role);
   };
-  return Users;
+  return User;
 };

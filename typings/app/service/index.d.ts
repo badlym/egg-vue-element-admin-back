@@ -7,6 +7,7 @@ type AnyFunc<T = any> = (...args: any[]) => T;
 type CanExportFunc = AnyFunc<Promise<any>> | AnyFunc<IterableIterator<any>>;
 type AutoInstanceType<T, U = T extends CanExportFunc ? T : T extends AnyFunc ? ReturnType<T> : T> = U extends AnyClass ? InstanceType<U> : U;
 import ExportLogin = require('../../../app/service/login');
+import ExportPermission = require('../../../app/service/permission');
 import ExportRegister = require('../../../app/service/register');
 import ExportRole = require('../../../app/service/role');
 import ExportUser = require('../../../app/service/user');
@@ -15,6 +16,7 @@ import ExportUserInfo = require('../../../app/service/userInfo');
 declare module 'egg' {
   interface IService {
     login: AutoInstanceType<typeof ExportLogin>;
+    permission: AutoInstanceType<typeof ExportPermission>;
     register: AutoInstanceType<typeof ExportRegister>;
     role: AutoInstanceType<typeof ExportRole>;
     user: AutoInstanceType<typeof ExportUser>;

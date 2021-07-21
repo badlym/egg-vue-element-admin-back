@@ -8,13 +8,13 @@ class UserInfoService extends Service {
   async index() {
     const { ctx } = this;
     console.log(ctx.helper.tokenInfo);
-    const result = await ctx.model.Users.findOne({
+    const result = await ctx.model.User.findOne({
       where: {
         id: ctx.helper.tokenInfo.data.id,
       },
       // raw: false,
       include: {
-        model: ctx.model.Roles,
+        model: ctx.model.Role,
       },
     });
     return result;

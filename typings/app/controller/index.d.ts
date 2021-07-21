@@ -5,6 +5,7 @@ import 'egg';
 import ExportBase = require('../../../app/controller/base');
 import ExportHome = require('../../../app/controller/home');
 import ExportLogin = require('../../../app/controller/login');
+import ExportPermission = require('../../../app/controller/permission');
 import ExportRegister = require('../../../app/controller/register');
 import ExportRole = require('../../../app/controller/role');
 import ExportUpload = require('../../../app/controller/upload');
@@ -16,6 +17,7 @@ declare module 'egg' {
     base: ExportBase;
     home: ExportHome;
     login: ExportLogin;
+    permission: ExportPermission;
     register: ExportRegister;
     role: ExportRole;
     upload: ExportUpload;

@@ -2,23 +2,23 @@
 'use strict';
 const Service = require('egg').Service;
 
-class UserService extends Service {
+class PermissionService extends Service {
   async index() {
     const { ctx } = this;
-    const { current, limit, username } = ctx.query;
-    const whereObj = {};
-    if (username) {
-      whereObj.username = username;
-    }
-    return await ctx.model.User.findAndCountAll({
-      where: whereObj,
+    const { current, limit } = ctx.query;
+    return await ctx.model.Permission.findAndCountAll({
       limit: parseInt(limit),
+      raw: true,
       offset: (current - 1) * limit,
-      order: [[ 'createdAt', 'ASC' ]],
-      include: {
-        model: ctx.model.Role,
-      },
     });
+  }
+  async getRole() {
+    const { ctx } = this;
+    return await ctx.model.Roles.findAll(
+      {
+        attributes: [ 'id', 'name', 'description' ],
+      }
+    );
   }
   async create() {
     const { ctx } = this;
@@ -27,23 +27,23 @@ class UserService extends Service {
     data.createBy = ctx.helper.tokenInfo.data.username;
     // console.log(ctx.helper.tokenInfo, '创建者');
     // ctx.logger.debug(ctx.helper.tokenInfo.username);
-    const user = await ctx.model.User.create(data);
+    const user = await ctx.model.Users.create(data);
     return user;
   }
   async update(id, payload) {
     const { ctx } = this;
     console.log(payload);
-    return await ctx.model.User.update(payload, {
+    return await ctx.model.Users.update(payload, {
       where: { id },
     });
   }
   async show(id) {
     const { ctx } = this;
-    return await ctx.model.User.findOne({ where: { id } });
+    return await ctx.model.Users.findOne({ where: { id } });
   }
   async destroy(id) {
     const { ctx } = this;
-    return ctx.model.User.destroy({ where: { id } }, { force: false });
+    return ctx.model.Users.destroy({ where: { id } }, { force: false });
 
   }
   async removes(payload) {
@@ -52,9 +52,9 @@ class UserService extends Service {
     } = this;
     // app.Sequelize
     const Op = app.Sequelize.Op;
-    return ctx.model.User.destroy({ where: { id: { [Op.in]: payload } } });
+    return ctx.model.Users.destroy({ where: { id: { [Op.in]: payload } } });
 
   }
 }
 
-module.exports = UserService;
+module.exports = PermissionService;

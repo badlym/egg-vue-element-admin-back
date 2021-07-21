@@ -1,25 +1,44 @@
+/* indent size: 2 */
 'use strict';
-
 module.exports = app => {
-  const { STRING, DATE, UUID } = app.Sequelize;
-  const College = app.model.define('users', {
-    id: { type: UUID, primaryKey: true, defaultValue: app.Sequelize.UUIDV4, allowNull: false },
-    name: {
-      type: STRING,
-      unique: true,
+  const DataTypes = app.Sequelize;
+  const Model = app.model.define('colleges', {
+    id: {
+      type: DataTypes.CHAR(36),
       allowNull: false,
+      primaryKey: true,
     },
-    created_at: DATE,
-    updated_at: DATE,
-    deleted_at: DATE,
-    createBy: STRING,
-    updateBy: STRING,
+    name: {
+      type: DataTypes.STRING(255),
+      allowNull: false,
+      unique: true,
+    },
+    created_at: {
+      type: DataTypes.DATE,
+      allowNull: true,
+    },
+    updated_at: {
+      type: DataTypes.DATE,
+      allowNull: true,
+    },
+    deleted_at: {
+      type: DataTypes.STRING(255),
+      allowNull: true,
+    },
+    create_by: {
+      type: DataTypes.STRING(255),
+      allowNull: true,
+    },
+    uptdate_by: {
+      type: DataTypes.STRING(255),
+      allowNull: true,
+    },
   }, {
-    timestamps: false,
+    tableName: 'colleges',
   });
-  College.associate = function() {
-    // 1对多
+  Model.associate = function() {
     app.model.College.hasMany(app.model.Class);
   };
-  return College;
+
+  return Model;
 };

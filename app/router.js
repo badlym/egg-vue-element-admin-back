@@ -11,6 +11,9 @@ module.exports = app => {
   router.get('/api/userInfo', controller.userInfo.index);
   router.post('/api/uploadFile', controller.upload.index);
   router.resources('user', '/api/user', controller.user);
-  router.delete('/api/user', controller.user.removes);
-  router.get('/api/role', controller.role.getRole);
+  router.delete('/api/user/remove', controller.user.removes);
+  router.get('/api/role/getrole', controller.role.getRole);
+  router.resources('permission', '/api/permission', controller.permission);
+  router.resources('role', '/api/role', controller.role);
+  router.delete('/api/role/remove', controller.role.removes);
 };

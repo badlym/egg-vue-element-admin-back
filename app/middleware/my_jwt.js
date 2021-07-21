@@ -14,6 +14,7 @@ module.exports = options => {
         // 解码token
         decode = ctx.app.jwt.verify(token, options.secret);
         ctx.helper.tokenInfo = decode;
+        console.log(decode, 'asdfasdfasdfasdfdsaf');
         await next();
       } catch (error) {
         ctx.status = 401;

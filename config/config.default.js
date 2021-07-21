@@ -64,6 +64,10 @@ module.exports = appInfo => {
         password: 'root',
         database: 'egg_main',
     * */
+  /*
+  *
+  *  ALTER USER 'root'@'localhost' IDENTIFIED BY '19910204liu';
+  * */
   config.sequelize = {
     dialect: 'mysql',
     host: 'rm-2zequywp3r5z8she2uo.mysql.rds.aliyuncs.com',
@@ -72,10 +76,11 @@ module.exports = appInfo => {
     username: 'liuchengjin',
     password: 'adc@19910204liu',
     define: { // model的全局配置
-      timestamps: true, // 添加create,update,delete时间戳
+      timestamps: false, // 添加create,update,delete时间戳
       paranoid: false, // 添加软删除
       freezeTableName: false, // 防止修改表名为复数
       underscored: true, // 防止驼峰式字段被默认转为下划线
+      raw: true,
     },
     timezone: '+8:00', // 由于orm用的UTC时间，这里必须加上东八区，否则取出来的时间相差8小时
     dialectOptions: { // 让读取date类型数据时返回字符串而不是UTC时间

@@ -5,54 +5,47 @@ const Service = require('egg').Service;
 class RoleService extends Service {
   async index() {
     const { ctx } = this;
-    const { current, limit, username } = ctx.query;
+    const { current, limit, name } = ctx.query;
     const whereObj = {};
-    if (username) {
-      whereObj.username = username;
+    if (name) {
+      whereObj.name = name;
     }
-    return await ctx.model.Users.findAndCountAll({
+    return await ctx.model.Role.findAndCountAll({
       where: whereObj,
       limit: parseInt(limit),
       offset: (current - 1) * limit,
-      order: [[ 'id', 'ASC' ]],
-      include: {
-        model: ctx.model.Roles,
-      },
+      // order: [[ 'id', 'ASC' ]],
+      // include: {
+      //   model: ctx.model.Roles,
+      // },
     });
   }
   async getRole() {
-
     const { ctx } = this;
-    return await ctx.model.Roles.findAll(
+    return await ctx.model.Role.findAll(
       {
         attributes: [ 'id', 'name', 'description' ],
       }
     );
   }
-  async create() {
+  async create(data) {
     const { ctx } = this;
-    const data = ctx.request.body;
-    console.log(data);
-    data.createBy = ctx.helper.tokenInfo.data.username;
-    // console.log(ctx.helper.tokenInfo, '创建者');
-    // ctx.logger.debug(ctx.helper.tokenInfo.username);
-    const user = await ctx.model.Users.create(data);
-    return user;
+    return ctx.model.Role.create(data);
   }
   async update(id, payload) {
     const { ctx } = this;
     console.log(payload);
-    return await ctx.model.Users.update(payload, {
+    return await ctx.model.Role.update(payload, {
       where: { id },
     });
   }
   async show(id) {
     const { ctx } = this;
-    return await ctx.model.Users.findOne({ where: { id } });
+    return await ctx.model.Role.findOne({ where: { id } });
   }
   async destroy(id) {
     const { ctx } = this;
-    return ctx.model.Users.destroy({ where: { id } }, { force: false });
+    return ctx.model.Role.destroy({ where: { id } }, { force: false });
 
   }
   async removes(payload) {
@@ -61,7 +54,7 @@ class RoleService extends Service {
     } = this;
     // app.Sequelize
     const Op = app.Sequelize.Op;
-    return ctx.model.Users.destroy({ where: { id: { [Op.in]: payload } } });
+    return ctx.model.Role.destroy({ where: { id: { [Op.in]: payload } } });
 
   }
 }

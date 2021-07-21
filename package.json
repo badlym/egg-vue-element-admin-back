@@ -1,5 +1,5 @@
 {
-  "name": "wmy_my_love",
+  "name": "egg-vue-element-admin",
   "version": "1.0.0",
   "description": "学生选课系统",
   "private": true,
@@ -45,7 +45,7 @@
     "lint": "eslint .",
     "ci": "npm run lint && npm run cov",
     "autod": "autod",
-    "dbload": "egg-sequelize-auto -o ./app/model/haha -h rm-2zequywp3r5z8she2uo.mysql.rds.aliyuncs.com -p 3306 -d egg-vue-element-admin-back -u liuchengjin -x adc@19910204liu "
+    "dbload": "egg-sequelize-auto -o ./app/model/haha -h rm-2zequywp3r5z8she2uo.mysql.rds.aliyuncs.com -p 3306 -d egg-vue-element-admin-back -u liuchengjin -x adc@19910204liu --camel"
   },
   "ci": {
     "version": "10"

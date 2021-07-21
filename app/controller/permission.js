@@ -1,32 +1,26 @@
 'use strict';
 
 const Controller = require('egg').Controller;
-
-
-/**
- * @controller UserController（ 注释必写，swagger-doc是根据这段注释来生成接口的 ）。
- */
-class UserController extends Controller {
-  /**  （ 注释必写，swagger-doc是根据这段注释来生成接口详细信息的 ）。
-   * @summary 根据ID查询信息。
-   * @description 根据ID查询信息。
-   * @router get /version01/controllers/selectById （ get 表示设置请求为 get 请求，最后的 selectById 对应下面的 selectById 方法 ）。
-   * @request query integer Id 需要去查新的ID。（ get 对应 query 请求，请求值设定为 integer 纯数字类型，ID 为请求的字段，注意大小写，和下面的方法要一一对应，不然会报错 ）。
-   * @response 200 JsonBody 返回结果。（ 对应 contract 里面的验证属性，下面会提到 。）
-   */
+class PermissionController extends Controller {
   async index() {
     const { ctx } = this;
     // eslint-disable-next-line no-debugger
-    const res = await ctx.service.user.index();
+    const res = await ctx.service.permission.index();
     ctx.status = 200;
-    ctx.body = {
-      data: {
-        list: res.rows,
-        total: res.count,
-      },
-    };
+    const list = ctx.helper.translateDataToTree(res.rows);
+    console.log(list, 'asdfafsdfsd');
+    ctx.helper.success({ ctx, res: {
+      list,
+      total: res.count,
+    } });
   }
-
+  async getRole() {
+    const { ctx } = this;
+    const res = await ctx.service.role.getRole();
+    console.log(res);
+    ctx.status = 200;
+    ctx.helper.success({ ctx, res });
+  }
   async create() {
     const { ctx } = this;
     const valid = await ctx.validate('users.user', ctx.request.body);
@@ -38,7 +32,6 @@ class UserController extends Controller {
       data: res,
     };
   }
-
   // 修改用户
   async update() {
     const { ctx, service } = this;
@@ -85,8 +78,10 @@ class UserController extends Controller {
   // 删除所选用户(条件id[])
   async removes() {
     const { ctx, service } = this;
-    const { ids } = ctx.request.body;
-    const payload = ids.split(',') || [];
+    const { id } = ctx.request.body;
+    ctx.logger.info(id);
+    console.log(id);
+    const payload = id.split(',') || [];
     // const payload = JSON.parse(id) || [];
     console.log(payload);
     //  调用 Service 进行业务处理
@@ -95,4 +90,4 @@ class UserController extends Controller {
   }
 }
 
-module.exports = UserController;
+module.exports = PermissionController;

@@ -3,12 +3,11 @@
 'use strict';
 
 const Service = require('egg').Service;
-const baseController = require('../controller/base');
 class LoginService extends Service {
   async find() {
     const { ctx } = this;
     console.log(ctx.request.body.username);
-    const username = await ctx.model.Users.findOne({
+    const username = await ctx.model.User.findOne({
       where: {
         username: ctx.request.body.username,
       },
@@ -17,9 +16,10 @@ class LoginService extends Service {
     if (username) {
       const password = ctx.request.body.password;
       if (password) {
-        const db = await ctx.model.Users.findOne({
+        const db = await ctx.model.User.findOne({
           where: {
             password: ctx.request.body.password,
+            username: ctx.request.body.username,
           },
         });
         if (db) {
@@ -29,6 +29,7 @@ class LoginService extends Service {
             msg: '操作成功',
             data: {
               token,
+              db,
             },
 
           };
