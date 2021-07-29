@@ -2,12 +2,11 @@
 'use strict';
 const Service = require('egg').Service;
 
-class PermissionService extends Service {
+class DeptService extends Service {
   async index() {
     const { ctx } = this;
-    return await ctx.model.Permission.findAll({
+    return await ctx.model.Dept.findAll({
       raw: true,
-      order: [[ 'sorts', 'ASC' ]],
     });
   }
   async create() {
@@ -16,23 +15,23 @@ class PermissionService extends Service {
 
     // console.log(ctx.helper.tokenInfo, '创建者');
     // ctx.logger.debug(ctx.helper.tokenInfo.username);
-    return ctx.model.Permission.create(data);
+    return ctx.model.Dept.create(data);
 
   }
   async update(id, payload) {
     const { ctx } = this;
     console.log(payload);
-    return await ctx.model.Permission.update(payload, {
+    return await ctx.model.Dept.update(payload, {
       where: { id },
     });
   }
   async show(id) {
     const { ctx } = this;
-    return await ctx.model.Permission.findOne({ where: { id } });
+    return await ctx.model.Dept.findOne({ where: { id } });
   }
   async destroy(id) {
     const { ctx } = this;
-    return ctx.model.Permission.destroy({ where: { id } }, { force: false });
+    return ctx.model.Dept.destroy({ where: { id } }, { force: false });
 
   }
   async remove(payload) {
@@ -42,8 +41,8 @@ class PermissionService extends Service {
     } = this;
     // app.Sequelize
     const Op = app.Sequelize.Op;
-    return ctx.model.Permission.destroy({ where: { id: { [Op.in]: payload } } });
+    return ctx.model.Dept.destroy({ where: { id: { [Op.in]: payload } } });
   }
 }
 
-module.exports = PermissionService;
+module.exports = DeptService;

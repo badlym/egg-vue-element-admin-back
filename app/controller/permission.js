@@ -7,25 +7,14 @@ class PermissionController extends Controller {
     // eslint-disable-next-line no-debugger
     const res = await ctx.service.permission.index();
     ctx.status = 200;
-    const list = ctx.helper.translateDataToTree(res.rows);
-    console.log(list, 'asdfafsdfsd');
+    const list = ctx.helper.translateDataToTree(res);
     ctx.helper.success({ ctx, res: {
       list,
-      total: res.count,
     } });
-  }
-  async getRole() {
-    const { ctx } = this;
-    const res = await ctx.service.role.getRole();
-    console.log(res);
-    ctx.status = 200;
-    ctx.helper.success({ ctx, res });
   }
   async create() {
     const { ctx } = this;
-    const valid = await ctx.validate('users.user', ctx.request.body);
-    if (!valid) return;
-    const res = await this.ctx.service.user.create();
+    const res = await this.ctx.service.permission.create();
     ctx.body = {
       code: 0,
       msg: '新增成功',
@@ -42,7 +31,7 @@ class PermissionController extends Controller {
     console.log(id);
     const payload = ctx.request.body;
     // 调用 Service 进行业务处理
-    const res = await service.user.update(id, payload);
+    const res = await service.permission.update(id, payload);
     if (res[0] === 0) {
       ctx.status = 400;
       ctx.helper.resError({ ctx, res: null, msg: '暂未查询到数据' });
@@ -58,8 +47,7 @@ class PermissionController extends Controller {
     // 组装参数
     const { id } = ctx.params;
     // 调用 Service 进行业务处理
-    const res = await service.user.show(id);
-
+    const res = await service.permission.show(id);
     // 设置响应内容和响应状态码
     ctx.helper.success({ ctx, res, msg: '查询成功' });
   }
@@ -70,24 +58,23 @@ class PermissionController extends Controller {
     // 校验参数
     const { id } = ctx.params;
     // 调用 Service 进行业务处理
-    const res = await service.user.destroy(id);
+    const res = await service.permission.destroy(id);
     // 设置响应内容和响应状态码
     ctx.helper.success({ ctx, res, msg: '删除成功' });
   }
-
   // 删除所选用户(条件id[])
-  async removes() {
+  async remove() {
     const { ctx, service } = this;
-    const { id } = ctx.request.body;
-    ctx.logger.info(id);
-    console.log(id);
-    const payload = id.split(',') || [];
+    const { ids } = ctx.request.body;
+    const payload = ids.split(',') || [];
     // const payload = JSON.parse(id) || [];
-    console.log(payload);
+    payload.forEach(item => {
+      parseInt(item);
+    });
+    console.log(payload, '载荷');
     //  调用 Service 进行业务处理
-    const result = await service.user.removes(payload);
+    const result = await service.permission.remove(payload);
     ctx.helper.success({ ctx, res: result });
   }
 }
-
 module.exports = PermissionController;

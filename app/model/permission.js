@@ -4,59 +4,74 @@ module.exports = app => {
   const DataTypes = app.Sequelize;
   const Model = app.model.define('permission', {
     id: {
-      type: DataTypes.CHAR(36),
+      type: DataTypes.INTEGER(11),
       allowNull: false,
       primaryKey: true,
+      autoIncrement: true,
+    },
+    name: {
+      type: DataTypes.TEXT,
+      allowNull: true,
     },
     parentId: {
       type: DataTypes.INTEGER(11),
       allowNull: true,
     },
-    path: {
-      type: DataTypes.STRING(255),
+    types: {
+      type: DataTypes.INTEGER(11),
       allowNull: true,
     },
-    name: {
-      type: DataTypes.STRING(255),
+    i_frame: {
+      type: DataTypes.INTEGER(11),
       allowNull: true,
     },
-    component: {
-      type: DataTypes.STRING(255),
+    url: {
+      type: DataTypes.TEXT,
       allowNull: true,
     },
-    redirect: {
-      type: DataTypes.STRING(255),
+    levels: {
+      type: DataTypes.INTEGER(11),
       allowNull: true,
     },
-    title: {
-      type: DataTypes.STRING(255),
+    state: {
+      type: DataTypes.INTEGER(11),
       allowNull: true,
     },
-    noKeepAlive: {
-      type: DataTypes.INTEGER(255),
+    sorts: {
+      type: DataTypes.INTEGER(11),
       allowNull: true,
     },
-    noClosable: {
-      type: DataTypes.INTEGER(255),
+    description: {
+      type: DataTypes.TEXT,
       allowNull: true,
     },
-    alwaysShow: {
-      type: DataTypes.INTEGER(255),
+    component_name: {
+      type: DataTypes.TEXT,
       allowNull: true,
     },
-    hidden: {
-      type: DataTypes.INTEGER(255),
+    component_path: {
+      type: DataTypes.TEXT,
       allowNull: true,
     },
     icon: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.TEXT,
+      allowNull: true,
+    },
+    cache: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true,
+    },
+    hidden: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true,
+    },
+    permissionFlag: {
+      type: DataTypes.TEXT,
       allowNull: true,
     },
   }, {
     tableName: 'permission',
-    timestamps: false,
   });
-
   Model.associate = function() {
     app.model.Permission.belongsToMany(app.model.Role, {
       through: app.model.RolePermission,

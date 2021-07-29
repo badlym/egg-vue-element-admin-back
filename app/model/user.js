@@ -24,6 +24,15 @@ module.exports = app => {
         key: 'id',
       },
     },
+    deptId: {
+      type: INTEGER,
+      references: {
+        model: {
+          tableName: 'dept',
+        },
+        key: 'id',
+      },
+    },
     name: STRING,
     avatar: STRING,
     phone: STRING,

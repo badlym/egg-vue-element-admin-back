@@ -5,16 +5,19 @@ const Controller = require('egg').Controller;
 class UserInfoController extends Controller {
   async index() {
     const { ctx } = this;
-    const res = await ctx.service.userInfo.index();
-    console.log(res.role);
-    res.dataValues.roles = [];
-    res.dataValues.roles.push(res.role.name);
-    res.dataValues.introduction = res.role.description;
-    console.log(res, '这就是res');
+    const roleResult = await ctx.service.userInfo.index();
+    ctx.logger.info(roleResult, '请求用户信息接口');
+    roleResult.dataValues.roles = [];
+    roleResult.dataValues.roles.push(roleResult.role.name);
+    roleResult.dataValues.introduction = roleResult.role.description;
+    roleResult.dataValues.permissions = roleResult.dataValues.role.permissions;
+    // roleResult.roles = [];
+    // roleResult.roles.push(roleResult.role.name);
+    // roleResult.introduction = roleResult.role.description;
     ctx.body = {
       code: 0,
       message: '请求用户信息接口成功',
-      data: res,
+      data: roleResult,
     };
   }
 }

@@ -88,7 +88,7 @@ class UserController extends Controller {
     const { ids } = ctx.request.body;
     const payload = ids.split(',') || [];
     // const payload = JSON.parse(id) || [];
-    console.log(payload);
+    console.log(payload, '载荷');
     //  调用 Service 进行业务处理
     const result = await service.user.removes(payload);
     ctx.helper.success({ ctx, res: result });

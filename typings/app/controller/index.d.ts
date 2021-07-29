@@ -3,6 +3,7 @@
 
 import 'egg';
 import ExportBase = require('../../../app/controller/base');
+import ExportDept = require('../../../app/controller/dept');
 import ExportHome = require('../../../app/controller/home');
 import ExportLogin = require('../../../app/controller/login');
 import ExportPermission = require('../../../app/controller/permission');
@@ -15,6 +16,7 @@ import ExportUserInfo = require('../../../app/controller/userInfo');
 declare module 'egg' {
   interface IController {
     base: ExportBase;
+    dept: ExportDept;
     home: ExportHome;
     login: ExportLogin;
     permission: ExportPermission;

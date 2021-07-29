@@ -1,30 +1,20 @@
 'use strict';
 
 const Controller = require('egg').Controller;
-class RoleController extends Controller {
+class PermissionController extends Controller {
   async index() {
     const { ctx } = this;
     // eslint-disable-next-line no-debugger
-    const res = await ctx.service.role.index();
+    const res = await ctx.service.dept.index();
     ctx.status = 200;
-    ctx.body = {
-      data: {
-        list: res.rows,
-        total: res.count,
-      },
-    };
-  }
-  async getRole() {
-    const { ctx } = this;
-    const res = await ctx.service.role.getRole();
-    console.log(res);
-    ctx.status = 200;
-    ctx.helper.success({ ctx, res });
+    const list = ctx.helper.translateDataToTree(res);
+    ctx.helper.success({ ctx, res: {
+      list,
+    } });
   }
   async create() {
     const { ctx } = this;
-    const data = ctx.request.body;
-    const res = await this.ctx.service.role.create(data);
+    const res = await this.ctx.service.dept.create();
     ctx.body = {
       code: 0,
       msg: '新增成功',
@@ -41,49 +31,50 @@ class RoleController extends Controller {
     console.log(id);
     const payload = ctx.request.body;
     // 调用 Service 进行业务处理
-    const res = await service.role.update(id, payload);
-    ctx.status = 201;
-    ctx.helper.success({ ctx, res });
-    // 设置响应内容和响应状态码
+    const res = await service.dept.update(id, payload);
+    if (res[0] === 0) {
+      ctx.status = 400;
+      ctx.helper.resError({ ctx, res: null, msg: '暂未查询到数据' });
+    } else {
+      ctx.status = 201;
+      ctx.helper.success({ ctx, res });
+    }// 设置响应内容和响应状态码
   }
+
   // 获取单个用户
   async show() {
     const { ctx, service } = this;
     // 组装参数
     const { id } = ctx.params;
     // 调用 Service 进行业务处理
-    let res = await service.role.show(id);
-    res = JSON.parse(JSON.stringify(res));
-    console.log(res);
-    res.permIds = [];
-    res.permIds = res.permissions.map(item => {
-      return item.id;
-    });
-    delete res.permissions;
+    const res = await service.dept.show(id);
     // 设置响应内容和响应状态码
     ctx.helper.success({ ctx, res, msg: '查询成功' });
   }
+
   // 删除单个用户
   async destroy() {
     const { ctx, service } = this;
     // 校验参数
     const { id } = ctx.params;
     // 调用 Service 进行业务处理
-    const res = await service.role.destroy(id);
+    const res = await service.dept.destroy(id);
     // 设置响应内容和响应状态码
     ctx.helper.success({ ctx, res, msg: '删除成功' });
   }
   // 删除所选用户(条件id[])
-  async removes() {
+  async remove() {
     const { ctx, service } = this;
     const { ids } = ctx.request.body;
-
     const payload = ids.split(',') || [];
     // const payload = JSON.parse(id) || [];
-    console.log(payload);
+    payload.forEach(item => {
+      parseInt(item);
+    });
+    console.log(payload, '载荷');
     //  调用 Service 进行业务处理
-    const result = await service.role.removes(payload);
+    const result = await service.dept.remove(payload);
     ctx.helper.success({ ctx, res: result });
   }
 }
-module.exports = RoleController;
+module.exports = PermissionController;

@@ -14,6 +14,7 @@ class RoleService extends Service {
       where: whereObj,
       limit: parseInt(limit),
       offset: (current - 1) * limit,
+      raw: false,
       // order: [[ 'id', 'ASC' ]],
       // include: {
       //   model: ctx.model.Roles,
@@ -35,13 +36,26 @@ class RoleService extends Service {
   async update(id, payload) {
     const { ctx } = this;
     console.log(payload);
-    return await ctx.model.Role.update(payload, {
-      where: { id },
-    });
+    const permissions = await ctx.model.Permission.findAll({ where: { id: payload.permIds } });
+    ctx.logger.info(JSON.parse(JSON.stringify(permissions)), '权限啦啦啦');
+    console.log(JSON.parse(JSON.stringify(permissions)), '权限啦啦啦');
+    const role = await ctx.model.Role.findByPk(id);
+    await role.update(payload);
+    await role.setPermissions(permissions);
+    return permissions;
   }
   async show(id) {
     const { ctx } = this;
-    return await ctx.model.Role.findOne({ where: { id } });
+    return await ctx.model.Role.findOne({ where: { id },
+      raw: false,
+      include: {
+        model: ctx.model.Permission,
+        attributes: [ 'id' ],
+        through: {
+          attributes: [],
+        },
+      },
+    });
   }
   async destroy(id) {
     const { ctx } = this;

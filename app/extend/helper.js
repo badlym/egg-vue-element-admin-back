@@ -63,7 +63,6 @@ module.exports = {
             value.parentId != null &&
             value.parentId !== 0
     );
-    console.log(children, 'sdfdasf;lokjl;Afld;askf;ldskf;lsdkf');
     // 定义转换方法的具体实现
     const translator = (parents, children) => {
       // 遍历父节点数据

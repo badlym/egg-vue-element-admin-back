@@ -53,7 +53,6 @@ class UserService extends Service {
     // app.Sequelize
     const Op = app.Sequelize.Op;
     return ctx.model.User.destroy({ where: { id: { [Op.in]: payload } } });
-
   }
 }
 

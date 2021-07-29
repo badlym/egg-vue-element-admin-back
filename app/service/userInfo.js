@@ -12,9 +12,15 @@ class UserInfoService extends Service {
       where: {
         id: ctx.helper.tokenInfo.data.id,
       },
-      // raw: false,
+      raw: false,
       include: {
         model: ctx.model.Role,
+        include: {
+          model: ctx.model.Permission,
+          through: {
+            attributes: [],
+          },
+        },
       },
     });
     return result;

@@ -4,6 +4,7 @@
 import 'egg';
 import ExportClass = require('../../../app/model/class');
 import ExportCollege = require('../../../app/model/college');
+import ExportDept = require('../../../app/model/dept');
 import ExportPermission = require('../../../app/model/permission');
 import ExportRole = require('../../../app/model/role');
 import ExportRolePermission = require('../../../app/model/role_permission');
@@ -13,6 +14,7 @@ declare module 'egg' {
   interface IModel {
     Class: ReturnType<typeof ExportClass>;
     College: ReturnType<typeof ExportCollege>;
+    Dept: ReturnType<typeof ExportDept>;
     Permission: ReturnType<typeof ExportPermission>;
     Role: ReturnType<typeof ExportRole>;
     RolePermission: ReturnType<typeof ExportRolePermission>;
