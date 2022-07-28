@@ -13,7 +13,6 @@ class PermissionService extends Service {
   async create() {
     const { ctx } = this;
     const data = ctx.request.body;
-
     // console.log(ctx.helper.tokenInfo, '创建者');
     // ctx.logger.debug(ctx.helper.tokenInfo.username);
     return ctx.model.Permission.create(data);

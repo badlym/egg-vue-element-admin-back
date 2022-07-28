@@ -46,6 +46,11 @@ module.exports = {
       msg,
     };
   },
+  jsonToObj(data) {
+    return JSON.parse(JSON.stringify(data));
+  },
+
+
   /**
    * 该方法用于将有父子关系的数组转换成树形结构的数组
    * 接收一个具有父子关系的数组作为参数
@@ -92,4 +97,43 @@ module.exports = {
     // 返回最终的结果
     return parents;
   },
+  deepClone(source) {
+    if (!source && typeof source !== 'object') {
+      throw new Error('error arguments', 'deepClone');
+    }
+    const targetObj = source.constructor === Array ? [] : {};
+    Object.keys(source).forEach(keys => {
+      if (source[keys] && typeof source[keys] === 'object') {
+        targetObj[keys] = this.deepClone(source[keys]);
+      } else {
+        targetObj[keys] = source[keys];
+      }
+    });
+    return targetObj;
+  },
+
+  // 树形结构数据转单层数组形式
+  jsonToArray(nodes) {
+    let r = [];
+    if (Array.isArray(nodes)) {
+      for (let i = 0, l = nodes.length; i < l; i++) {
+        r.push(nodes[i]); // 取每项数据放入一个新数组
+        // 若存在children则递归调用，把数据拼接到新数组中，并且删除该children
+        if (Array.isArray(nodes[i].children) && nodes[i].children.length > 0) {
+          r = r.concat(this.jsonToArray(nodes[i].children));
+        }
+        delete nodes[i].children;
+      }
+    }
+    return r;
+  },
+  RndNum: n => {
+    let rnd = '';
+    for (let i = 0; i < n; i++) {
+      rnd += Math.floor(Math.random() * 10);
+    }
+    return rnd;
+  },
+
+
 };

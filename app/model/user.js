@@ -1,9 +1,13 @@
 'use strict';
 
 module.exports = app => {
-  const { STRING, INTEGER, DATE, UUID } = app.Sequelize;
+  const { STRING, INTEGER, DATE } = app.Sequelize;
   const User = app.model.define('user', {
-    id: { type: UUID, primaryKey: true, defaultValue: app.Sequelize.UUIDV4 },
+    id: { type: INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     username: {
       type: STRING,
       unique: true,
@@ -36,12 +40,19 @@ module.exports = app => {
     name: STRING,
     avatar: STRING,
     phone: STRING,
+
   }, {
     timestamps: true,
   });
   User.associate = function() {
     // 1对多
+    app.model.User.belongsTo(app.model.Dept);
     app.model.User.belongsTo(app.model.Role);
+    app.model.User.belongsToMany(app.model.Course, {
+      through: app.model.UserCourse,
+      foreignKey: 'userId', // 注意写法
+      otherKey: 'courseId',
+    });
   };
   return User;
 };

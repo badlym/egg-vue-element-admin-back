@@ -46,6 +46,16 @@ class RoleController extends Controller {
     ctx.helper.success({ ctx, res });
     // 设置响应内容和响应状态码
   }
+  async updateByDept() {
+    const { ctx, service } = this;
+    const payload = ctx.request.body;
+    const id = payload.id;
+    // 调用 Service 进行业务处理
+    const res = await service.role.updateByDept(id, payload);
+    ctx.status = 201;
+    ctx.helper.success({ ctx, res });
+    // 设置响应内容和响应状态码
+  }
   // 获取单个用户
   async show() {
     const { ctx, service } = this;
@@ -54,8 +64,11 @@ class RoleController extends Controller {
     // 调用 Service 进行业务处理
     let res = await service.role.show(id);
     res = JSON.parse(JSON.stringify(res));
-    console.log(res);
     res.permIds = [];
+    res.deptIds = res.depts.map(item => {
+      return item.id;
+    });
+    delete res.depts;
     res.permIds = res.permissions.map(item => {
       return item.id;
     });
@@ -77,7 +90,6 @@ class RoleController extends Controller {
   async removes() {
     const { ctx, service } = this;
     const { ids } = ctx.request.body;
-
     const payload = ids.split(',') || [];
     // const payload = JSON.parse(id) || [];
     console.log(payload);

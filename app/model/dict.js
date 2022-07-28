@@ -2,42 +2,42 @@
 'use strict';
 module.exports = app => {
   const DataTypes = app.Sequelize;
-  const Model = app.model.define('dept', {
+
+  const Model = app.model.define('dict', {
     id: {
       type: DataTypes.INTEGER(11),
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
+      // autoIncrement: true,
     },
-    name: {
+    data_type: {
       type: DataTypes.TEXT,
       allowNull: true,
     },
-    parentId: {
-      type: DataTypes.INTEGER(11),
+    data_key: {
+      type: DataTypes.TEXT,
       allowNull: true,
     },
-    levels: {
-      type: DataTypes.INTEGER(11),
-      allowNull: true,
-    },
-    for_service: {
-      type: DataTypes.INTEGER(11),
-      allowNull: true,
-    },
-    deleted: {
-      type: DataTypes.INTEGER(11),
+    data_value: {
+      type: DataTypes.TEXT,
       allowNull: true,
     },
     sorts: {
-      type: DataTypes.INTEGER(11),
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: true,
+    },
+    description: {
+      type: DataTypes.TEXT,
       allowNull: true,
     },
   }, {
-    tableName: 'dept',
+    tableName: 'dict',
   });
+
   Model.associate = function() {
-    app.model.Dept.hasMany(app.model.User);
+    app.model.Dict.hasOne(app.model.Role, {
+      foreignKey: 'data_scope',
+    });
   };
   return Model;
 };

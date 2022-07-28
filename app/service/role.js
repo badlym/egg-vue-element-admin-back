@@ -37,24 +37,40 @@ class RoleService extends Service {
     const { ctx } = this;
     console.log(payload);
     const permissions = await ctx.model.Permission.findAll({ where: { id: payload.permIds } });
-    ctx.logger.info(JSON.parse(JSON.stringify(permissions)), '权限啦啦啦');
-    console.log(JSON.parse(JSON.stringify(permissions)), '权限啦啦啦');
     const role = await ctx.model.Role.findByPk(id);
     await role.update(payload);
     await role.setPermissions(permissions);
     return permissions;
   }
+  async updateByDept(id, payload) {
+    const { ctx } = this;
+    console.log(payload);
+    const depts = await ctx.model.Dept.findAll({ where: { id: payload.deptIds } });
+    const role = await ctx.model.Role.findByPk(id);
+    await role.update(payload);
+    await role.setDepts(depts);
+    return depts;
+  }
   async show(id) {
     const { ctx } = this;
     return await ctx.model.Role.findOne({ where: { id },
       raw: false,
-      include: {
+      include: [{
         model: ctx.model.Permission,
         attributes: [ 'id' ],
         through: {
           attributes: [],
         },
       },
+      {
+        model: ctx.model.Dept,
+        attributes: [ 'id' ],
+        through: {
+          attributes: [],
+        },
+      },
+
+      ],
     });
   }
   async destroy(id) {

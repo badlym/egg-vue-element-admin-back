@@ -15,9 +15,12 @@
     "egg-oss": "^2.0.0",
     "egg-scripts": "^2.11.0",
     "egg-sequelize": "^6.0.0",
+    "egg-socket.io": "^4.1.6",
     "egg-swagger-doc": "^2.3.2",
     "egg-validate": "^2.0.2",
     "egg-validate-plus-next": "^1.1.1",
+    "lodash": "^4.17.21",
+    "module-alias": "^2.2.2",
     "mysql2": "^2.2.5"
   },
   "devDependencies": {
@@ -53,6 +56,10 @@
   "repository": {
     "type": "git",
     "url": ""
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@app": "app"
   },
   "author": "刘程锦",
   "license": "MIT"

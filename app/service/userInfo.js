@@ -7,25 +7,45 @@ const Service = require('egg').Service;
 class UserInfoService extends Service {
   async index() {
     const { ctx } = this;
-    console.log(ctx.helper.tokenInfo);
-    const result = await ctx.model.User.findOne({
+
+
+    return await ctx.model.User.findOne({
       where: {
         id: ctx.helper.tokenInfo.data.id,
       },
       raw: false,
-      include: {
-        model: ctx.model.Role,
-        include: {
-          model: ctx.model.Permission,
-          through: {
-            attributes: [],
-          },
-        },
-      },
+      include:
+            [{
+              model: ctx.model.Role,
+              include: [
+                {
+                  model: ctx.model.Permission,
+                  through: {
+                    attributes: [],
+                  },
+                },
+                {
+                  model: ctx.model.Dept,
+                  through: {
+                    attributes: [],
+                  },
+                },
+
+              ],
+            },
+            ],
+
     });
-    return result;
 
   }
+
+  async getAllDeptIdList() {
+    const { ctx } = this;
+    return await ctx.model.Dept.findAll({
+      attributes: [ 'id' ],
+    });
+  }
+
 
 }
 

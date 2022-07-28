@@ -1,4 +1,4 @@
-// This file is created by egg-ts-helper@1.25.8
+// This file is created by egg-ts-helper@1.30.4
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
@@ -21,7 +21,7 @@ import 'egg-oss';
 import 'egg-validate';
 import 'egg-cors';
 import 'egg-validate-plus-next';
-import 'egg-swagger-doc';
+import 'egg-socket.io';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -44,6 +44,6 @@ declare module 'egg' {
     validate?: EggPluginItem;
     cors?: EggPluginItem;
     validatePlusNext?: EggPluginItem;
-    swaggerdoc?: EggPluginItem;
+    io?: EggPluginItem;
   }
 }
