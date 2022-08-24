@@ -28,6 +28,11 @@ class CourseService extends Service {
     return await ctx.model.Course.findAll(
       {
         attributes: [ 'id', 'name', 'description' ],
+        include: [
+          {
+            model: ctx.model.Teacher,
+          },
+        ],
       }
     );
   }

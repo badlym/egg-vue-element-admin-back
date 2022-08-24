@@ -78,6 +78,16 @@ class StudentrController extends Controller {
     const result = await service.student.remove(payload);
     ctx.helper.success({ ctx, res: result });
   }
+  async getStudentCourse() {
+    const { ctx } = this;
+    const payload = ctx.query;
+    const res = await ctx.service.student.getStudentCourse(payload);
+    // ctx.helper.success(ctx, res);
+    ctx.body = {
+      data: res,
+    };
+  }
 }
+
 
 module.exports = StudentrController;

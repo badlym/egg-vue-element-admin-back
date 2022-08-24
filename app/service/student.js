@@ -52,6 +52,27 @@ class StudentService extends Service {
     const Op = app.Sequelize.Op;
     return ctx.model.Student.destroy({ where: { id: { [Op.in]: payload } } });
   }
+  async getStudentCourse(payload) {
+    const { ctx } = this;
+    const { current, limit } = payload;
+    return await ctx.model.Student.findAndCountAll({
+      where: {
+        id: ctx.helper.tokenInfo.data.id,
+      },
+      limit: parseInt(limit),
+      offset: (current - 1) * limit,
+      include: [
+        {
+          model: ctx.model.Course,
+          include: {
+            model: ctx.model.Teacher,
+          },
+        },
+      ],
+    });
+
+  }
 }
+
 
 module.exports = StudentService;

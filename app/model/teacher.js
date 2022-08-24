@@ -5,26 +5,24 @@ module.exports = app => {
 
   const Model = app.model.define('teacher', {
     id: {
-      type: DataTypes.INTEGER(11),
+      type: DataTypes.CHAR(36),
       allowNull: false,
-      unique: true,
+      primaryKey: true,
     },
     name: {
       type: DataTypes.STRING(255),
-      allowNull: false,
-      primaryKey: true,
+      allowNull: true,
     },
     sex: {
       type: DataTypes.INTEGER(1),
       allowNull: true,
     },
     number: {
-      type: DataTypes.INTEGER(11),
+      type: DataTypes.STRING(255),
       allowNull: true,
-      unique: true,
     },
-    dept_id: {
-      type: DataTypes.INTEGER(11),
+    avatar: {
+      type: DataTypes.STRING(255),
       allowNull: true,
     },
     password: {
@@ -38,10 +36,12 @@ module.exports = app => {
   }, {
     tableName: 'teacher',
   });
-
   Model.associate = function() {
-
+    app.model.Teacher.belongsToMany(app.model.Course, {
+      through: app.model.TeacherCourse,
+      foreignKey: 'teacherId', // 注意写法
+      otherKey: 'courseId',
+    });
   };
-
   return Model;
 };

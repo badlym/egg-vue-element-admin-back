@@ -23,11 +23,17 @@ module.exports = app => {
   });
 
   Model.associate = function() {
+    app.model.Course.belongsToMany(app.model.Teacher, {
+      through: app.model.TeacherCourse,
+      foreignKey: 'courseId', // 注意写法
+      otherKey: 'teacherId',
+    });
     app.model.Course.belongsToMany(app.model.Student, {
       through: app.model.StudentCourse,
       foreignKey: 'courseId', // 注意写法
       otherKey: 'studentId',
     });
+
   };
   return Model;
 };

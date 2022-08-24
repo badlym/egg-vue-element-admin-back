@@ -12,6 +12,12 @@ module.exports = app => {
       type: DataTypes.INTEGER(11),
       allowNull: true,
     },
+    flag: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+
+
+    },
   }, {
     tableName: 'student_course',
   });

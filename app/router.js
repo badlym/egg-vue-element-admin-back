@@ -11,7 +11,6 @@ module.exports = app => {
   router.get('/api/userInfo', controller.userInfo.index);
   router.post('/api/uploadFile', controller.upload.index);
   router.delete('/api/user/remove', controller.user.removes);
-  router.get('/api/user/getUserCourse', controller.user.getUserCourse);
   router.resources('user', '/api/user', controller.user);
   router.put('/api/role/updatebydept', controller.role.updateByDept);
   router.get('/api/role/getrole', controller.role.getRole);
@@ -24,6 +23,7 @@ module.exports = app => {
   router.delete('/api/dict/remove', controller.dict.remove);
   router.get('/api/dict/getDict', controller.dict.getDict);
   router.resources('dict', '/api/dict', controller.dict);
+  router.get('/api/student/getStudentCourse', controller.student.getStudentCourse);
   router.delete('/api/student/remove', controller.student.remove);
   router.resources('student', '/api/student', controller.student);
   router.delete('/api/course/remove', controller.course.remove);

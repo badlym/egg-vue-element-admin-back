@@ -50,6 +50,7 @@ class RoleController extends Controller {
     const { ctx, service } = this;
     const payload = ctx.request.body;
     const id = payload.id;
+    console.log(payload, 'payload');
     // 调用 Service 进行业务处理
     const res = await service.role.updateByDept(id, payload);
     ctx.status = 201;

@@ -18,24 +18,6 @@ import ExportTeacherCourse = require('../../../app/model/teacher_course');
 import ExportUser = require('../../../app/model/user');
 import ExportUserCourse = require('../../../app/model/user_course');
 import ExportUserRole = require('../../../app/model/user_role');
-import ExportHahaClass = require('../../../app/model/haha/class');
-import ExportHahaColleges = require('../../../app/model/haha/colleges');
-import ExportHahaCourse = require('../../../app/model/haha/course');
-import ExportHahaDept = require('../../../app/model/haha/dept');
-import ExportHahaDict = require('../../../app/model/haha/dict');
-import ExportHahaPermission = require('../../../app/model/haha/permission');
-import ExportHahaRoles = require('../../../app/model/haha/roles');
-import ExportHahaRoleDept = require('../../../app/model/haha/role_dept');
-import ExportHahaRolePermission = require('../../../app/model/haha/role_permission');
-import ExportHahaSequelizemeta = require('../../../app/model/haha/sequelizemeta');
-import ExportHahaStudent = require('../../../app/model/haha/student');
-import ExportHahaStudents = require('../../../app/model/haha/students');
-import ExportHahaStudentCourse = require('../../../app/model/haha/student_course');
-import ExportHahaTeacher = require('../../../app/model/haha/teacher');
-import ExportHahaTeacherCourse = require('../../../app/model/haha/teacher_course');
-import ExportHahaUsers = require('../../../app/model/haha/users');
-import ExportHahaUserCourse = require('../../../app/model/haha/user_course');
-import ExportHahaUserRole = require('../../../app/model/haha/user_role');
 
 declare module 'egg' {
   interface IModel {
@@ -55,25 +37,5 @@ declare module 'egg' {
     User: ReturnType<typeof ExportUser>;
     UserCourse: ReturnType<typeof ExportUserCourse>;
     UserRole: ReturnType<typeof ExportUserRole>;
-    Haha: {
-      Class: ReturnType<typeof ExportHahaClass>;
-      Colleges: ReturnType<typeof ExportHahaColleges>;
-      Course: ReturnType<typeof ExportHahaCourse>;
-      Dept: ReturnType<typeof ExportHahaDept>;
-      Dict: ReturnType<typeof ExportHahaDict>;
-      Permission: ReturnType<typeof ExportHahaPermission>;
-      Roles: ReturnType<typeof ExportHahaRoles>;
-      RoleDept: ReturnType<typeof ExportHahaRoleDept>;
-      RolePermission: ReturnType<typeof ExportHahaRolePermission>;
-      Sequelizemeta: ReturnType<typeof ExportHahaSequelizemeta>;
-      Student: ReturnType<typeof ExportHahaStudent>;
-      Students: ReturnType<typeof ExportHahaStudents>;
-      StudentCourse: ReturnType<typeof ExportHahaStudentCourse>;
-      Teacher: ReturnType<typeof ExportHahaTeacher>;
-      TeacherCourse: ReturnType<typeof ExportHahaTeacherCourse>;
-      Users: ReturnType<typeof ExportHahaUsers>;
-      UserCourse: ReturnType<typeof ExportHahaUserCourse>;
-      UserRole: ReturnType<typeof ExportHahaUserRole>;
-    }
   }
 }
